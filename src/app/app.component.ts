@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'karting-weight-calculation';
+  title = 'Calculateur de leste pour les 24h karting';
 }
