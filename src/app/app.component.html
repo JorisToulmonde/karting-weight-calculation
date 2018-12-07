@@ -1,9 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container container-fluid">
-  <div class="row">
-    <div style="margin: auto">
-      <h1>{{ title }}</h1>
+  <div class="row header">
+    <div class="marginAuto">
+      <app-header [title]="title"></app-header>
+    </div>
+  </div>
+  <div class="row m-5">
+    <div class="marginAuto">
+      <app-generalinfo></app-generalinfo>
     </div>
   </div>
 </div>
-<router-outlet></router-outlet>
+
+
+
+
