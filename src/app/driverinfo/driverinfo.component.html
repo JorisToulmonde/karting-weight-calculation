@@ -23,18 +23,14 @@
 </div>
 
 <div mdbModal #basicModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+  <div class="modal-dialog-centered modal-changement" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title w-100" id="myModalLabel">Tableau du lestage</h4>
+        <h4 class="modal-title w-100" id="myModalLabel">Lestage</h4>
       </div>
       <div class="modal-body">
         <div *ngIf="showListBoolean">
-          <div *ngFor="let driver of drivers" class="alignCenter">
-            <div *ngIf="driver.name && driver.weight">
-              {{driver.name}} pèse {{driver.weight}}kg.
-            </div>
-          </div>
+          <app-gasolinearray></app-gasolinearray>
         </div>
       </div>
       <div class="modal-footer">

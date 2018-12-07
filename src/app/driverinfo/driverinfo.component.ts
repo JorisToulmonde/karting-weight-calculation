@@ -19,7 +19,6 @@ export class DriverinfoComponent implements OnInit {
   constructor(private calculatorService: CalculatorServiceService) { }
 
   ngOnInit() {
-    console.log(this.calculatorService.getDriverNumber());
     this.calculatorService.initDrivers();
     this.calculatorService.getDrivers()
       .subscribe(drivers => this.drivers = drivers);

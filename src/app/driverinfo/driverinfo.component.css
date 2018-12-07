@@ -1,3 +1,8 @@
 .alignCenter{
   text-align: center;
 }
+
+.modal-changement{
+  width: 60%;
+  margin: 30px auto;
+}
