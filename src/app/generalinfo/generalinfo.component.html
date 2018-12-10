@@ -1,18 +1,16 @@
 <div style="border: black; border-style: solid; border-radius: 30px; padding: 15px 15px 15px 15px; background-color: white;">
   <div class="row">
-    <div class="col-lg-4 col-md-4">
+    <div class="col-lg-12 col-md-12">
       <input class="form-control" type="text" [(ngModel)]="driverNumber" placeholder="Nombre de pilotes" (ngModelChange)="changementDriverNumber()">
-    </div>
-    <div class="col-lg-4 col-md-4">
-      <input class="form-control" type="text" [(ngModel)]="kartWeight" placeholder="Poids du kart" (ngModelChange)="changementKartWeight()">
-    </div>
-    <div class="col-lg-4 col-md-4">
-      <input class="form-control" type="text" [(ngModel)]="weightGoal" placeholder="Poids sur la balance" (ngModelChange)="changementWeightGoal()">
     </div>
   </div>
 
   <div *ngIf="driverNumber>0 && driverNumber<8">
-    <app-driverinfo [driverNumber]="driverNumber"></app-driverinfo>
+    <div class="row">
+      <div class="col-md-12 col-lg-12">
+        <app-driverinfo [driverNumber]="driverNumber"></app-driverinfo>
+      </div>
+    </div>
   </div>
 </div>
 

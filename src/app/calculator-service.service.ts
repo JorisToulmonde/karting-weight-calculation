@@ -8,8 +8,8 @@ import {Observable, of} from 'rxjs';
 export class CalculatorServiceService {
 
   driverNumber: number;
-  kartWeight: number;
-  weightGoal: number;
+  kartWeight = 158;
+  weightGoal = 241;
 
   drivers: Driver[];
 

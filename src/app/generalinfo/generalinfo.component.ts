@@ -15,18 +15,12 @@ export class GeneralinfoComponent implements OnInit {
   constructor(private calculatorService: CalculatorServiceService) { }
 
   ngOnInit() {
+    this.kartWeight = this.calculatorService.getKartWeight();
+    this.weightGoal = this.calculatorService.getWeightGoal();
   }
 
   changementDriverNumber(): void {
     this.calculatorService.setDriverNumber(this.driverNumber);
-  }
-
-  changementKartWeight(): void {
-    this.calculatorService.setKartWeight(this.kartWeight);
-  }
-
-  changementWeightGoal(): void {
-    this.calculatorService.setWeightGoal(this.weightGoal);
   }
 
 }
