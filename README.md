@@ -5,7 +5,7 @@ This is base on the kart weight, each driver weight and gasoline (depending of t
 
 # Access
 
-Let's go to https://joristoulmonde.github.io/KartingWeightCalculation to see the application (still in development).
+Let's go to https://joristoulmonde.github.io/karting-weight-calculation/index to see the application (still in development).
 
 # Credits
 
