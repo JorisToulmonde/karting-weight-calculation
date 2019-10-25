@@ -38,17 +38,17 @@ export class GasolinearrayComponent implements OnInit {
       if (fullGazoline <= 0) {
         leste.fullGazoline = 0;
       } else {
-        leste.fullGazoline = fullGazoline;
+        leste.fullGazoline = Number(fullGazoline.toFixed(2));
       }
       if (halfGazoline <= 0) {
         leste.halfGazoline = 0;
       } else {
-        leste.halfGazoline = halfGazoline;
+        leste.halfGazoline = Number(halfGazoline.toFixed(2));
       }
       if (emptyGazoline <= 0) {
         leste.emptyGazoline = 0;
       } else {
-        leste.emptyGazoline = emptyGazoline;
+        leste.emptyGazoline = Number(emptyGazoline.toFixed(2));
       }
       this.leste.push(leste);
     }

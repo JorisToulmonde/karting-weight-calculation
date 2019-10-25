@@ -3,6 +3,34 @@
 }
 
 .header{
-  height: 150px;
-  background-color: aliceblue;
+  height: 200px;
+  padding-top: 20px;
+  background-image: linear-gradient(to right, mediumblue , yellow);
+}
+
+#anim{
+  position: absolute;
+  animation-name: test;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#anim2{
+  opacity: 0;
+  animation-name: test2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
+
+@keyframes test {
+  0% {margin-left: 93%;}
+  100% {margin-left: -130px;}
+}
+
+@keyframes test2 {
+  0% {margin-left: 93%; opacity: 1}
+  100% {margin-left: -130px;opacity: 1}
 }

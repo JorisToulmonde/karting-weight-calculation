@@ -1,13 +1,27 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="container container-fluid">
+<div class="container-fluid">
   <div class="row header">
     <div class="marginAuto">
-      <app-header [title]="title"></app-header>
+      <app-header [title1]="title1" [title2]="title2"></app-header>
     </div>
   </div>
-  <div class="row m-5">
-    <div class="marginAuto">
+  <div class="row">
+    <div id="anim">
+      <img src="../assets/img/kart.svg" height="50px" width="125px">
+    </div>
+    <div id="anim2">
+      <img src="../assets/img/kart.svg" height="50px" width="125px">
+    </div>
+  </div>
+  <div class="row m-1">
+    <div class="col-md-3">
+
+    </div>
+    <div style="margin: 0 auto">
       <app-generalinfo></app-generalinfo>
+    </div>
+    <div class="col-md-3">
+
     </div>
   </div>
 </div>

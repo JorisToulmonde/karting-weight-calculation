@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Calculateur de leste pour les 24h Open Kart 2019';
+  title1 = '24h OPEN KART 2019';
+  title2 = 'Calculateur de leste';
 }

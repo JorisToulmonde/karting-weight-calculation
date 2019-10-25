@@ -1,10 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+@font-face {
+  font-family: lemans;
+  src: url("./assets/font/le_mans.ttf");
+}
+
 body{
   min-height: 100vh;
   position: relative;
   margin: 0;
-  background-color: aliceblue;
+  background-color: white;
 }
 
 footer{
